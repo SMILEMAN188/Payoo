@@ -10,16 +10,62 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome -->
+     <script src="https://kit.fontawesome.com/7b2921b6cc.js" crossorigin="anonymous"></script>
+     <!-- Font empliment -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+     <style>
+        *{
+  font-family: "Outfit", sans-serif;}
+     </style>
 </head>
-<body class="bg-slate-800">
-    <section class="max-w-md min-h-screen bg-[#e7f2f0] mx-auto py-6">
+<body class="bg-slate-800 ">
+    <section class="max-w-md min-h-screen bg-[#ffffff] mx-auto py-6">
         <!-- navbar -->
-         <nav>
-            <div>
-                
+         <nav class="flex flex-row justify-around items-center border-black border-b-2 border-t-2 pt-2 pb-4">
+            <div class="flex flex-row">
+                <img class="w-12" src="assets/Group.png" alt="">
+                <div class="flex flex-col">
+                    <p>$ <span class="font-extrabold text-lg">1000</span></p>
+                <p class="text-sm text-[#808080]/50">Available Balance</p>
+                </div>
             </div>
+            <button class="btn btn-dash btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out</button>
          </nav>
-
+         <!-- Welcome -->
+          <header class="px-4">
+            <p class="font-bold text-2xl pt-5">🔥Welcome to Payooo!</p>
+            <p class="text-[#808080]/50">Enjoy easy and convenient financial services with us.Cashout charge is low and </p>
+        </header>
+        <!-- Option -->
+         <main class="px-4 grid grid-cols-3 gap-2 pt-8">
+            <div class="flex flex-col justify-center items-center border-slate-950 border-1 rounded-lg p-4  hover:border-blue-950 hover:bg-blue-200">
+                <img src="assets/purse1.png" alt="">
+                <p>Add Money</p>
+            </div>
+            <div class="flex flex-col justify-center items-center border-slate-950 border-1 rounded-lg p-4  hover:border-blue-950 hover:bg-blue-200">
+                <img src="assets/send1.png" alt="">
+                <p>Cashout</p>
+            </div>
+            <div class="flex flex-col justify-center items-center border-slate-950 border-1 rounded-lg p-4 text-center  hover:border-blue-950 hover:bg-blue-200">
+                <img src="assets/money1.png" alt="">
+                <p>Transfer Money</p>
+            </div>
+            <div class="flex flex-col justify-center items-center border-slate-950 border-1 rounded-lg p-4 text-center hover:border-blue-950 hover:bg-blue-200">
+                <img src="assets/bonus1.png" alt="">
+                <p>Get <br> Bonus</p>
+            </div>
+            <div class="flex flex-col justify-center items-center border-slate-950 border-1 rounded-lg p-4  hover:border-blue-950 hover:bg-blue-200">
+                <img src="assets/purse1.png" alt="">
+                <p>Pay Bill</p>
+            </div>
+            <div class="flex flex-col justify-center items-center border-slate-950 border-1 rounded-lg p-4 hover:border-blue-950 hover:bg-blue-200">
+                <img src="assets/transaction1.png" alt="">
+                <p>Transactions</p>
+            </div>
+         </main>
     </section>
     <script src="homepage.js"></script>
 </body>
