@@ -21,10 +21,10 @@
   font-family: "Outfit", sans-serif;}
      </style>
 </head>
-<body class="bg-slate-800 ">
-    <section class="max-w-md min-h-screen bg-[#ffffff] mx-auto py-6">
+<body class="bg-slate-800">
+    <section class=" max-w-md min-h-screen bg-white mx-auto py-1">
         <!-- navbar -->
-         <nav class="flex flex-row justify-around items-center border-black border-b-2 border-t-2 pt-2 pb-4">
+         <nav class="flex flex-row justify-around items-center border-black border-b-2 pt-2 pb-4 ">
             <div class="flex flex-row">
                 <img class="w-12" src="assets/Group.png" alt="">
                 <div class="flex flex-col">
@@ -32,7 +32,7 @@
                 <p class="text-sm text-[#808080]/50">Available Balance</p>
                 </div>
             </div>
-            <button class="btn btn-dash btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out</button>
+            <button class="btn btn-dash btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"> </i> Log Out</button>
          </nav>
          <!-- Welcome -->
           <header class="px-4">
@@ -40,33 +40,125 @@
             <p class="text-[#808080]/50">Enjoy easy and convenient financial services with us.Cashout charge is low and </p>
         </header>
         <!-- Option -->
-         <main class="px-4 grid grid-cols-3 gap-2 pt-8">
-            <div class="flex flex-col justify-center items-center border-slate-950 border-1 rounded-lg p-4  hover:border-blue-950 hover:bg-blue-200">
+         <main class="px-4 grid grid-cols-3 gap-2 pt-8 pb-4">
+            <div class="flex flex-col justify-center items-center border-slate-950 border-1 rounded-lg p-4  hover:border-blue-950 hover:bg-blue-200 shadow-blue-400 hover:shadow-md">
                 <img src="assets/purse1.png" alt="">
                 <p>Add Money</p>
             </div>
-            <div class="flex flex-col justify-center items-center border-slate-950 border-1 rounded-lg p-4  hover:border-blue-950 hover:bg-blue-200">
+            <div class="flex flex-col justify-center items-center border-slate-950 border-1 rounded-lg p-4  hover:border-blue-950 hover:bg-blue-200 shadow-blue-400 hover:shadow-md">
                 <img src="assets/send1.png" alt="">
                 <p>Cashout</p>
             </div>
-            <div class="flex flex-col justify-center items-center border-slate-950 border-1 rounded-lg p-4 text-center  hover:border-blue-950 hover:bg-blue-200">
+            <div class="flex flex-col justify-center items-center border-slate-950 border-1 rounded-lg p-4 text-center  hover:border-blue-950 hover:bg-blue-200 shadow-blue-400 hover:shadow-md">
                 <img src="assets/money1.png" alt="">
                 <p>Transfer Money</p>
             </div>
-            <div class="flex flex-col justify-center items-center border-slate-950 border-1 rounded-lg p-4 text-center hover:border-blue-950 hover:bg-blue-200">
+            <div class="flex flex-col justify-center items-center border-slate-950 border-1 rounded-lg p-4 text-center hover:border-blue-950 hover:bg-blue-200 shadow-blue-400 hover:shadow-md">
                 <img src="assets/bonus1.png" alt="">
                 <p>Get <br> Bonus</p>
             </div>
-            <div class="flex flex-col justify-center items-center border-slate-950 border-1 rounded-lg p-4  hover:border-blue-950 hover:bg-blue-200">
+            <div class="flex flex-col justify-center items-center border-slate-950 border-1 rounded-lg p-4  hover:border-blue-950 hover:bg-blue-200 shadow-blue-400 hover:shadow-md">
                 <img src="assets/purse1.png" alt="">
                 <p>Pay Bill</p>
             </div>
-            <div class="flex flex-col justify-center items-center border-slate-950 border-1 rounded-lg p-4 hover:border-blue-950 hover:bg-blue-200">
+            <div class="flex flex-col justify-center items-center border-slate-950 border-1 rounded-lg p-4 hover:border-blue-950 hover:bg-blue-200 shadow-blue-400 hover:shadow-md">
                 <img src="assets/transaction1.png" alt="">
                 <p>Transactions</p>
             </div>
          </main>
+                                                  <!-- Features -->
+         <footer>
+            <!-- Add money -->
+             <div class="bg-blue-100 pt-4 rounded-t-2xl px-3 ">
+                <h1><b>Add Money</b></h1>
+                <div class="bg-white rounded-lg p-4 m-8 flex flex-col gap-3">
+                    <h1><b>Select A Bank</b></h1>
+                    <select class="w-full px-2 py-3 bg-[#F4F5F7] rounded-xl">
+                        <option disabled selected>Select A Bank</option>
+                        <option>B-kash</option>
+                        <option>Nagad</option>
+                        <option>Rocket</option>
+                        required
+                    </select>
+                    <h1><b>Bank Account Number</b></h1>
+                    <input class="w-full px-2 py-3 bg-[#F4F5F7] rounded-xl"  placeholder="Enter 11 digit number" required>
+                    <h1><b>Amount To Add</b></h1>
+                    <input class="w-full px-2 py-3 bg-[#F4F5F7] rounded-xl" placeholder="Add Amount to withdraw" required>
+                    <h1><b>Pin Number</b></h1>
+                    <input class="w-full px-2 py-3 bg-[#F4F5F7] rounded-xl"  placeholder="Enter 4 digit pin number" required>
+                    <button class="btn btn-soft btn-primary">Add Money</button>
+                 </div>
+             </div>
+
+             <!-- Cashout -->
+             <div class="bg-blue-100 pt-4 rounded-t-2xl px-3 ">
+                <h1><b>Cash Out</b></h1>
+                <div class="bg-white rounded-lg p-4 m-8 flex flex-col gap-3">
+                    <h1><b>Agent Number</b></h1>
+                    <input class="w-full px-2 py-3 bg-[#F4F5F7] rounded-xl"  placeholder="Enter 11 digit number" required>
+                    <h1><b>Amount</b></h1>
+                    <input class="w-full px-2 py-3 bg-[#F4F5F7] rounded-xl" placeholder="Enter amount to withdraw" required>
+                    <h1><b>Pin Number</b></h1>
+                    <input class="w-full px-2 py-3 bg-[#F4F5F7] rounded-xl"  placeholder="Enter 4 digit pin number" required>
+                    <button class="btn btn-soft btn-primary">Withdraw Money</button>
+                 </div>
+             </div>
+             <!-- Transfer Money -->
+             <div class="bg-blue-100 pt-4 rounded-t-2xl px-3 ">
+                <h1><b>Transfer Money</b></h1>
+                <div class="bg-white rounded-lg p-4 m-8 flex flex-col gap-3">
+                    <h1><b>User Account Number</b></h1>
+                    <input class="w-full px-2 py-3 bg-[#F4F5F7] rounded-xl" placeholder="Enter 11 digit number" required>
+                    <h1><b>Amount</b></h1>
+                    <input class="w-full px-2 py-3 bg-[#F4F5F7] rounded-xl" placeholder="Enter amount to transfer" required>
+                    <h1><b>Pin Number</b></h1>
+                    <input class="w-full px-2 py-3 bg-[#F4F5F7] rounded-xl" placeholder="Enter 4 digit pin number" required>
+                    <button class="btn btn-soft btn-primary">Send Now</button>
+                 </div>
+             </div>
+             <!-- Get Bonus -->
+             <div class="bg-blue-100 pt-4 rounded-t-2xl px-3 ">
+                <h1><b>Get Bonus</b></h1>
+                <div class="bg-white rounded-lg p-4 m-8 flex flex-col gap-3">
+                    <h1><b>Enter Bonus Coupon</b></h1>
+                    <input class="w-full px-2 py-3 bg-[#F4F5F7] rounded-xl" placeholder="Enter your coupon" required>
+                    <button class="btn btn-soft btn-primary">Get Bonus</button>
+                 </div>
+             </div>
+             <!-- Pay Bill -->
+             <div class="bg-blue-100 pt-4 rounded-t-2xl px-3 ">
+                <h1><b>Pay Bill</b></h1>
+                <div class="bg-white rounded-lg p-4 m-8 flex flex-col gap-3">
+                    <h1><b>Select To Pay</b></h1>
+                    <select class="w-full px-2 py-3 bg-[#F4F5F7] rounded-xl">
+                        <option disabled selected>Select A Bank</option>
+                        <option>B-kash</option>
+                        <option>Nagad</option>
+                        <option>Rocket</option>
+                        required
+                    </select>
+                    <h1><b>Biller Account Number</b></h1>
+                    <input class="w-full px-2 py-3 bg-[#F4F5F7] rounded-xl"  placeholder="Enter account number" required>
+                    <h1><b>Amount to Pay</b></h1>
+                    <input class="w-full px-2 py-3 bg-[#F4F5F7] rounded-xl" placeholder="Add Amount to pay" required>
+                    <h1><b>Pin Number</b></h1>
+                    <input class="w-full px-2 py-3 bg-[#F4F5F7] rounded-xl"  placeholder="Enter 4 digit pin number" required>
+                    <button class="btn btn-soft btn-primary">Add Money</button>
+                 </div>
+             </div>
+             <!-- Transaction History -->
+             <div class="bg-blue-100 pt-4 rounded-t-2xl px-3 ">
+                <h1><b>Get Bonus</b></h1>
+                <div class="bg-white rounded-lg p-4 m-8 flex flex-col gap-3">
+                    
+                 </div>
+             </div>
+
+
+
+
+         </footer>
     </section>
-    <script src="homepage.js"></script>
+    <script src="scripts/homepage.js"></script>
 </body>
 </html>
